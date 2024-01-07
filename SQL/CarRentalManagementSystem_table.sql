@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jan 04, 2024 at 06:26 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Host: localhost
+-- Generation Time: Jan 07, 2024 at 09:35 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -49,7 +49,7 @@ CREATE TABLE `customer` (
   `Address` varchar(100) NOT NULL,
   `Email` varchar(30) NOT NULL,
   `Phone` int(11) NOT NULL,
-  `LicenseNumber` int(12) NOT NULL
+  `LicenseNumber` varchar(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -164,8 +164,8 @@ ALTER TABLE `reservation`
 -- Constraints for table `rentaltransaction`
 --
 ALTER TABLE `rentaltransaction`
-  ADD CONSTRAINT `rentaltransaction_ibfk_1` FOREIGN KEY (`CustomerID`) REFERENCES `customer` (`customerID`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `rentaltransaction_ibfk_2` FOREIGN KEY (`CarID`) REFERENCES `car` (`carID`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `rentaltransaction_ibfk_1` FOREIGN KEY (`CustomerID`) REFERENCES `customer` (`CustomerID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `rentaltransaction_ibfk_2` FOREIGN KEY (`CarID`) REFERENCES `car` (`CarID`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
