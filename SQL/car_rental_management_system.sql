@@ -28,11 +28,11 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `car` (
-  `CarID` int(11) NOT NULL,
-  `Model` varchar(60) NOT NULL,
+  `CarID` int(4) NOT NULL,
+  `Model` varchar(30) NOT NULL,
   `Year` date NOT NULL,
   `Color` text NOT NULL,
-  `RegistrationNumber` int(11) NOT NULL,
+  `RegistrationNumber` int(10) NOT NULL,
   `RentalRatePerDay` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -43,13 +43,13 @@ CREATE TABLE `car` (
 --
 
 CREATE TABLE `customer` (
-  `CustomerID` int(11) NOT NULL,
-  `FirstName` varchar(60) NOT NULL,
-  `LastName` varchar(60) NOT NULL,
-  `Address` varchar(120) NOT NULL,
-  `Email` varchar(60) NOT NULL,
+  `CustomerID` int(4) NOT NULL,
+  `FirstName` varchar(30) NOT NULL,
+  `LastName` varchar(30) NOT NULL,
+  `Address` varchar(100) NOT NULL,
+  `Email` varchar(30) NOT NULL,
   `Phone` int(11) NOT NULL,
-  `LicenseNumber` int(11) NOT NULL
+  `LicenseNumber` int(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -59,8 +59,8 @@ CREATE TABLE `customer` (
 --
 
 CREATE TABLE `insurance` (
-  `InsuranceID` int(11) NOT NULL,
-  `TransactionID` int(11) NOT NULL,
+  `InsuranceID` int(4) NOT NULL,
+  `TransactionID` int(4) NOT NULL,
   `PolicyNumber` int(11) NOT NULL,
   `CoverageType` varchar(30) NOT NULL,
   `PremiumAmount` double NOT NULL
@@ -73,8 +73,8 @@ CREATE TABLE `insurance` (
 --
 
 CREATE TABLE `payment` (
-  `PaymentID` int(11) NOT NULL,
-  `TransactionID` int(11) NOT NULL,
+  `PaymentID` int(4) NOT NULL,
+  `TransactionID` int(4) NOT NULL,
   `PaymentDate` date NOT NULL,
   `Amount` double NOT NULL,
   `PaymentMethod` varchar(20) NOT NULL
@@ -87,9 +87,9 @@ CREATE TABLE `payment` (
 --
 
 CREATE TABLE `rentaltransaction` (
-  `TransactionID` int(11) NOT NULL,
-  `CustomerID` int(11) NOT NULL,
-  `CarID` int(11) NOT NULL,
+  `TransactionID` int(4) NOT NULL,
+  `CustomerID` int(4) NOT NULL,
+  `CarID` int(4) NOT NULL,
   `RentalStartDate` date NOT NULL,
   `RentalEndDate` date NOT NULL,
   `TotalCost` double NOT NULL
@@ -102,9 +102,9 @@ CREATE TABLE `rentaltransaction` (
 --
 
 CREATE TABLE `reservation` (
-  `ReservationID` int(11) NOT NULL,
-  `CustomerID` int(11) NOT NULL,
-  `CarID` int(11) NOT NULL,
+  `ReservationID` int(4) NOT NULL,
+  `CustomerID` int(4) NOT NULL,
+  `CarID` int(4) NOT NULL,
   `ReservationDate` date NOT NULL,
   `PickupDate` date NOT NULL,
   `ReturnDate` date NOT NULL
