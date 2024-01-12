@@ -7,7 +7,6 @@ Examples:
 •⁠  ⁠⁠Fine particular user of any car
 •⁠  ⁠⁠Allow to add, modify and remove some details of car rental
 •⁠  ⁠⁠Allow to add, modify and remove car renter
-
 */
 
 /*query*/
