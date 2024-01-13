@@ -4,9 +4,9 @@ Write some SQL statements that allow you to query, add, modify and remove some d
 Examples: 
 •⁠  ⁠List all cars in the database
 •⁠  ⁠⁠List all rented cars
-•⁠  ⁠⁠Find particular user of any car
-•⁠  ⁠⁠Allow to add, modify and remove some details of customer
-•⁠  ⁠⁠Allow to add, modify and remove customer
+•⁠  ⁠⁠Fine particular user of any car
+•⁠  ⁠⁠Allow to add, modify and remove some details of car rental
+•⁠  ⁠⁠Allow to add, modify and remove car renter
 
 */
 
