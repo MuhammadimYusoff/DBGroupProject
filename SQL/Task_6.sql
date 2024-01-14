@@ -11,10 +11,13 @@ Examples:
 */
 
 /*query*/
+-- •⁠  ⁠List all cars in the database
 SELECT * FROM car;
 
+-- •⁠  ⁠⁠List all rented cars
 SELECT * FROM rentaltransaction;
 
+-- •⁠  ⁠⁠Find particular user of any car
 SELECT * FROM rentaltransaction 
 WHERE CustomerID = 'customer_id';
 
