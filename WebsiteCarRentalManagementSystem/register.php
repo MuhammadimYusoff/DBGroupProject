@@ -145,7 +145,7 @@ input#cpsw{
 }</style> 
 
     <button id="back"><a href="index.php">HOME</a></button>
-    <h1 id="fam">JOIN OUR FAMILY OF CARS!</h1>
+    <h1 id="fam">Join IIUM Car Rentals Today</h1>
  <div class="main">
         
         <div class="register">

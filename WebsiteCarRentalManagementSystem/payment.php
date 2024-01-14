@@ -37,7 +37,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background:orange url("images/paym.jpg") center/cover;
+  background:orange url("images/car-bg.jpg") center/cover;
   overflow: hidden;
 }
 
@@ -80,16 +80,18 @@ body {
   border: none;
   border-bottom: dashed 0.2rem rgba(255, 255, 255, 0.15);
   font-size: 1.2rem;
-  color: #fff;
+  color: black;
   text-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 }
 .card__input--large {
   font-size: 2rem;
+  color: black;
 }
 
 .card__input::placeholder {
   color: rgba(255, 255, 255, 1);
   text-shadow: none;
+  color: black;
 }
 
 .card__input:focus {
@@ -99,7 +101,7 @@ body {
 
 .card__label {
   display: block;
-  color: #fff;
+  color: black;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
   font-weight: 400;
 }

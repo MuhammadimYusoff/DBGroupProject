@@ -198,7 +198,7 @@
     <div class="hai">
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo">CaRs</h2>
+                <h2 class="logo">IIUM CAR RENT</h2>
             </div>
             <div class="menu">
                 <ul>

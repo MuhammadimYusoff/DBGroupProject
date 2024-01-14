@@ -74,10 +74,9 @@ require_once('connection.php');
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#">HOME</a></li>
+                    <!-- <li><a href="#">HOME</a></li> -->
                     <!-- <li><a href="aboutus2.html">ABOUT</a></li> -->
-                    <li><a href="#">SERVICES</a></li>
-                    
+                    <!--<li><a href="#">SERVICES</a></li>-->
                     <!-- <li><a href="contactus2.html">CONTACT</a></li> -->
                   <li> <button class="adminbtn"><a href="adminlogin.php">ADMIN LOGIN</a></button></li>
                 </ul>

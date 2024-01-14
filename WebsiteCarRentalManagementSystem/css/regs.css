@@ -4,14 +4,9 @@
 
 }
 body{
-    background-image: url("../images/regs.jpg");
-    
-    
-    /* background-size: cover;
-    background-position: center; */
-    /* margin-top: 0px; */
-    
+  color: #ccc;
 }
+
 .main{
     width: 400px;
     margin: 100px auto 0px auto;
@@ -83,7 +78,7 @@ input#name{
 #back{
     width: 100px;
     height: 40px;
-    background: #ff7200;
+    background: white;
     border:none;
     margin-top: 10px;
     margin-left: 20px;
