@@ -1,3 +1,5 @@
+-- Task 5--
+
 -- Insert 10 rows into 'admin' table
 INSERT INTO `admin` (`ADMIN_ID`, `ADMIN_PASSWORD`)
 VALUES
@@ -43,27 +45,27 @@ VALUES
 -- Insert 10 rows into 'customer' table
 INSERT INTO `customer` (`FNAME`, `LNAME`, `EMAIL`, `LICENSE_NO`, `PHONE_NO`, `PASSWORD`, `GENDER`)
 VALUES
-('Ahmad', 'Rahman', 'ahmad.rahman@gmail.com', 'AB123456', 9876543211, 'password1', 'Male'),
-('Siti', 'Aminah', 'siti.aminah@gmail.com', 'CD789012', 9876543212, 'password2', 'Female'),
-('Mohammad', 'Hassan', 'mohammad.hassan@gmail.com', 'EF345678', 9876543213, 'password3', 'Male'),
-('Nor', 'Azizah', 'nor.azizah@gmail.com', 'GH567890', 9876543214, 'password4', 'Female'),
-('Ali', 'Ismail', 'ali.ismail@gmail.com', 'IJ123456', 9876543215, 'password5', 'Male'),
-('Fatimah', 'Linda', 'fatimahlinda@gmail.com', 'KL345678', 9876543216, 'password6', 'Female'),
-('Zainuddin', 'Zakaria', 'zainuddin.zakaria@gmail.com', 'MN567890', 9876543217, 'password7', 'Male'),
-('Salmah', 'Hashim', 'salmah.hashim@gmail.com', 'OP123456', 9876543218, 'password8', 'Female'),
-('Razak', 'Abdullah', 'razak.abdullah@gmail.com', 'QR345678', 9876543219, 'password9', 'Male'),
-('Nur', 'Aisyah', 'nur.aisyah@gmail.com', 'ST567890', 9876543220, 'password10', 'Female');
+('Ahmad', 'Rahman', 'ahmad.rahman@gmail.com', 'AB123456', 0113674891, 'password1', 'Male'),
+('Siti', 'Aminah', 'siti.aminah@gmail.com', 'CD789012', 0138746298, 'password2', 'Female'),
+('Mohammad', 'Hassan', 'mohammad.hassan@gmail.com', 'EF345678', 0145873625, 'password3', 'Male'),
+('Nor', 'Azizah', 'nor.azizah@gmail.com', 'GH567890', 0175878725, 'password4', 'Female'),
+('Ali', 'Ismail', 'ali.ismail@gmail.com', 'IJ123456', 0195878756, 'password5', 'Male'),
+('Fatimah', 'Linda', 'fatimahlinda@gmail.com', 'KL345678', 0115874456, 'password6', 'Female'),
+('Zainuddin', 'Zakaria', 'zainuddin.zakaria@gmail.com', 'MN567890', 0115876767, 'password7', 'Male'),
+('Salmah', 'Hashim', 'salmah.hashim@gmail.com', 'OP123456', 0198267351, 'password8', 'Female'),
+('Razak', 'Abdullah', 'razak.abdullah@gmail.com', 'QR345678', 0112265628, 'password9', 'Male'),
+('Nur', 'Aisyah', 'nur.aisyah@gmail.com', 'ST567890', 0102659828, 'password10', 'Female');
 
 -- Insert 10 rows into 'payment' table
 INSERT INTO `payment` (`PAY_ID`, `BOOK_ID`, `CARD_NO`, `EXP_DATE`, `CVV`, `AMOUNT`)
 VALUES
-(301, 201, 1234567812345678, '12/25', 123, 250.50),
-(302, 202, 2345678923456789, '01/26', 456, 150.25),
-(303, 203, 3456789034567890, '02/27', 789, 200.75),
-(304, 204, 4567890145678901, '03/28', 012, 120.00),
-(305, 205, 5678901256789012, '04/29', 345, 300.00),
-(306, 206, 6789012367890123, '05/30', 678, 180.50),
-(307, 207, 7890123478901234, '06/31', 901, 250.00),
-(308, 208, 8901234589012345, '07/32', 234, 120.75),
-(309, 209, 9012345690123456, '08/33', 567, 200.00),
-(310, 210, 1234567801234567, '09/34', 890, 300.25);
+(301, 201, 1111111111, '12/25', 123, 250.50),
+(302, 202, 2222222222, '01/26', 456, 150.25),
+(303, 203, 3333333333, '02/27', 789, 200.75),
+(304, 204, 4444444444, '03/28', 012, 120.00),
+(305, 205, 5555555555, '04/29', 345, 300.00),
+(306, 206, 6666666666, '05/30', 678, 180.50),
+(307, 207, 7777777777, '06/31', 901, 250.00),
+(308, 208, 8888888888, '07/32', 234, 120.75),
+(309, 209, 9999999999, '08/33', 567, 200.00),
+(310, 210, 1211212121, '09/34', 890, 300.25);
