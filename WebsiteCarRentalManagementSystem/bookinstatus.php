@@ -116,7 +116,7 @@ ul li{
         echo '<script> window.location.href = "cardetails.php";</script>';
     }
     else{
-    $sql2="select * from users where EMAIL='$email'";
+    $sql2="select * from customer where EMAIL='$email'";
     $name2 = mysqli_query($con,$sql2);
     $rows2=mysqli_fetch_assoc($name2);
     $car_id=$rows['CAR_ID'];
@@ -139,7 +139,7 @@ ul li{
          <div class="content">
              <h1>CAR NAME : <?php echo $rows3['CAR_NAME']?></h1><br>
              <h1>NO OF DAYS : <?php echo $rows['DURATION']?></h1><br>
-             <h1>BOOKING STATUS : <?php echo $rows['BOOK_STATUS']?></h1><br>
+             <h1>BOOKING STATUS : <?php echo $rows['STATUS']?></h1><br>
              
          </div>
      </div>
