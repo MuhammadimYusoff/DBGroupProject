@@ -155,9 +155,9 @@ ul li a{
 <?php
 
 require_once('connection.php');
-$query="select *from feedback";
-$queryy=mysqli_query($con,$query);
-$num=mysqli_num_rows($queryy);
+// $query="select *from feedback";
+// $queryy=mysqli_query($con,$query);
+// $num=mysqli_num_rows($queryy);
 
 
 ?>
@@ -175,7 +175,7 @@ $num=mysqli_num_rows($queryy);
                 <ul>
                     <li><a href="adminvehicle.php">VEHICLE MANAGEMENT</a></li>
                     <li><a href="adminusers.php">USERS</a></li>
-                    <li><a href="admindash.php">FEEDBACKS</a></li>
+                    <!-- <li><a href="admindash.php">FEEDBACKS</a></li> -->
                     
                     <li><a href="adminbook.php">BOOKING REQUEST</a></li>
                   <li> <button class="nn"><a href="index.php">LOGOUT</a></button></li>
@@ -184,7 +184,7 @@ $num=mysqli_num_rows($queryy);
             
           
         </div>
-        <div>
+        <!-- <div>
             <h1 class="header">FEEDBACKS</h1>
             <div>
                 <div>
@@ -214,7 +214,7 @@ $num=mysqli_num_rows($queryy);
                 </table>
                 </div>
             </div>
-        </div>
+        </div> -->
      
 </body>
 </html>

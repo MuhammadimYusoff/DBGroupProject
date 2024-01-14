@@ -195,7 +195,7 @@ $num=mysqli_num_rows($queryy);
                 <ul>
                     <li><a href="adminvehicle.php">VEHICLE MANAGEMENT</a></li>
                     <li><a href="adminusers.php">USERS</a></li>
-                    <li><a href="admindash.php">FEEDBACKS</a></li>
+                    <!-- <li><a href="admindash.php">FEEDBACKS</a></li> -->
                     
                     <li><a href="adminbook.php">BOOKING REQUEST</a></li>
                   <li> <button class="nn"><a href="index.php">LOGOUT</a></button></li>
@@ -215,9 +215,9 @@ $num=mysqli_num_rows($queryy);
                         
                         <th>CAR ID</th>
                         <th>CAR NAME</th>
-                        <th>FUEL TYPE</th>
+                        <th>CAR FUEL</th>
                         <th>CAPACITY</th>
-                        <th>PRICE</th>
+                        <th>RATE PER DAY</th>
                         <th>AVAILABLE</th>
                         <th>DELETE</th>
                     </tr>
@@ -234,11 +234,11 @@ $num=mysqli_num_rows($queryy);
                     
                     <td><?php echo $res['CAR_ID'];?></php></td>
                     <td><?php echo $res['CAR_NAME'];?></php></td>
-                    <td><?php echo $res['FUEL_TYPE'];?></php></td>
+                    <td><?php echo $res['CAR_FUEL'];?></php></td>
                     <td><?php echo $res['CAPACITY'];?></php></td>
-                    <td><?php echo $res['PRICE'];?></php></td>
+                    <td><?php echo $res['RATE_PER_DAY'];?></php></td>
                     <td><?php  
-                    if($res['AVAILABLE']=='Y')
+                    if($res['AVAILABILITY']=='Y')
                     {
                         echo 'YES';
                     }

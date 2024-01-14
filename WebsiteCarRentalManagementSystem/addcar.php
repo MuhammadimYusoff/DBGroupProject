@@ -150,7 +150,7 @@ input#name{
             id="name" placeholder="Enter Car Name" required>
             <br><br>
 
-            <label>Fuel Type : </label>
+            <label>Car Fuel : </label>
             <br>
             <input type ="text" name="ftype"
             id="name" placeholder="Enter Fuel Type" required>
