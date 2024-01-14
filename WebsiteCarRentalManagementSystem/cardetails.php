@@ -18,7 +18,7 @@
 }
 
 body{
-    background: url("images/carbg2.jpg");
+    background: url("images/car-rental-wallpaper.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -243,7 +243,7 @@ ul li a:hover{
     <div class="main">
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo">CaRs</h2>
+                <h2 class="logo">IIUM CAR RENT</h2>
             </div>
             <div class="menu">
                
@@ -283,7 +283,7 @@ ul li a:hover{
             <h1><?php echo $result['CAR_NAME']?></h1>
             <h2>Fuel Type : <a><?php echo $result['CAR_FUEL']?></a> </h2>
             <h2>CAPACITY : <a><?php echo $result['CAPACITY']?></a> </h2>
-            <h2>Rent Per Day : <a>₹<?php echo $result['RATE_PER_DAY']?>/-</a></h2>
+            <h2>Rent Per Day : <a>RM<?php echo $result['RATE_PER_DAY']?>/-</a></h2>
             <button type="submit"  name="booknow" class="utton" style="margin-top: 5px;"><a href="booking.php?id=<?php echo $res;?>">book</a></button>
         </div>
     </div></form></li>
