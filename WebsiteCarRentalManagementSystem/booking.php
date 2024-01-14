@@ -246,7 +246,7 @@ ul li a:hover{
     $name = mysqli_query($con,$sql);
     $rows=mysqli_fetch_assoc($name);
     $uemail=$rows['EMAIL'];
-    $carprice=$email['EMAIL'];
+    $carprice=$email['RATE_PER_DAY'];
     if(isset($_POST['book'])){
        
         $bplace=mysqli_real_escape_string($con,$_POST['place']);
