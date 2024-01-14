@@ -15,7 +15,7 @@
 }
 .hai{
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0)50%, rgba(0,0,0,0)50%),url("../images/carbg2.jpg");
+    background: linear-gradient(to top, rgba(0,0,0,0)50%, rgba(0,0,0,0)50%),url("images/carbg2.jpg");
     background-position: center;
     background-size: cover;
     height: 109vh;
@@ -174,7 +174,7 @@ $num=mysqli_num_rows($queryy);
             <div class="menu">
                 <ul>
                     <li><a href="adminvehicle.php">VEHICLE MANAGEMENT</a></li>
-                    <li><a href="adminusers.php">CUSTOMERS</a></li>
+                    <li><a href="adminusers.php">USERS</a></li>
                     <!-- <li><a href="admindash.php">FEEDBACKS</a></li> -->
                     
                     <li><a href="adminbook.php">BOOKING REQUEST</a></li>
