@@ -160,7 +160,7 @@ ul li a{
 <?php
 
 require_once('connection.php');
-$query="select *from users";
+$query="select * from customer";
 $queryy=mysqli_query($con,$query);
 $num=mysqli_num_rows($queryy);
 
@@ -174,8 +174,8 @@ $num=mysqli_num_rows($queryy);
             <div class="menu">
                 <ul>
                     <li><a href="adminvehicle.php">VEHICLE MANAGEMENT</a></li>
-                    <li><a href="adminusers.php">USERS</a></li>
-                    <li><a href="admindash.php">FEEDBACKS</a></li>
+                    <li><a href="adminusers.php">CUSTOMERS</a></li>
+                    <!-- <li><a href="admindash.php">FEEDBACKS</a></li> -->
                     
                     <li><a href="adminbook.php">BOOKING REQUEST</a></li>
                   <li> <button class="nn"><a href="index.php">LOGOUT</a></button></li>
@@ -196,7 +196,7 @@ $num=mysqli_num_rows($queryy);
                         <th>LICENSE NUMBER</th>
                         <th>PHONE NUMBER</th> 
                         <th>GENDER</th> 
-                        <th>DELETE USERS</th>
+                        <th>DELETE CUSTOMER</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -210,8 +210,8 @@ $num=mysqli_num_rows($queryy);
                 <tr  class="active-row">
                     <td><?php echo $res['FNAME']."  ".$res['LNAME'];?></php></td>
                     <td><?php echo $res['EMAIL'];?></php></td>
-                    <td><?php echo $res['LIC_NUM'];?></php></td>
-                    <td><?php echo $res['PHONE_NUMBER'];?></php></td>
+                    <td><?php echo $res['LICENSE_NO'];?></php></td>
+                    <td><?php echo $res['PHONE_NO'];?></php></td>
                     <td><?php echo $res['GENDER'];?></php></td>
                     <td><button type="submit" class="but" name="approve"><a href="deleteuser.php?id=<?php echo $res['EMAIL']?>">DELETE USER</a></button></td>
                 </tr>
