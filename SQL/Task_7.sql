@@ -2,7 +2,8 @@
 Write a script to create two procedures.
 Example:
 •⁠  ⁠Add new car and customer
-•⁠  ⁠Second procedure will retrieve specific car
+•⁠  Retrieve details for a specific car
+•⁠  Update the status of booking
 *Bonus mark for complex query
 */
 
