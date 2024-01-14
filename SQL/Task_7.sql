@@ -33,6 +33,9 @@ BEGIN
     VALUES (p_f_name, p_l_name, p_email, p_licence_no, p_phone_no, p_password, p_gender);
 END//
 
+-- execute procedure
+EXECUTE add_new_car_customer('BMW', 'Petrol', 5, 200, 'bmw.jpg', '
+
 
 --procedure 2: retrieve details for a specific car
 CREATE PROCEDURE retrieve_car_details (
@@ -43,6 +46,8 @@ BEGIN
     WHERE CAR_ID = p_car_id;
 END//
 
+-- execute procedure
+EXECUTE retrieve_car_details(1);
 
 --procedure 3: update the status of booking
 CREATE PROCEDURE update_booking_status (
@@ -55,6 +60,5 @@ BEGIN
     WHERE BOOK_ID = p_booking_id;
 END//
 
-
-
-
+-- execute procedure
+EXECUTE update_booking_status(1, 'Completed');
