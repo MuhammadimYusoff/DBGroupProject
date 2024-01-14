@@ -14,19 +14,6 @@ VALUES
 ('admin9', 'password9'),
 ('admin10', 'password10');
 
--- Insert 10 rows into 'booking' table
-INSERT INTO `booking` (`BOOK_ID`, `CAR_ID`, `EMAIL`, `BOOK_LOCATION`, `BOOK_DATE`, `DURATION`, `PHONE_NO`, `DESTINATION`, `RETURN_DATE`, `AMOUNT`, `STATUS`)
-VALUES
-(201, 101, 'ahmad.rahman@gmail.com', 'Kuala Lumpur', '2024-01-14', 5, 1234567891, 'Penang', '2024-01-19', 250.50, 'CONFIRMED'),
-(202, 102, 'siti.aminah@gmail.com', 'Penang', '2024-01-15', 3, 1234567892, 'Alor Setar', '2024-01-18', 150.25, 'PENDING'),
-(203, 103, 'mohammad.hassan@gmail.com', 'Langkawi', '2024-01-16', 4, 1234567893, 'Langkawi', '2024-01-20', 200.75, 'CONFIRMED'),
-(204, 104, 'nor.azizah@gmail.com', 'Cameron Highlands', '2024-01-17', 2, 1234567894, 'Gombak', '2024-01-19', 120.00, 'PENDING'),
-(205, 105, 'ali.ismail@gmail.com', 'Gombak', '2024-01-18', 6, 1234567895, 'Batu Pahat', '2024-01-23', 300.00, 'CONFIRMED'),
-(206, 106, 'fatimahlinda@gmail.com', 'Shah Alam', '2024-01-19', 3, 1234567896, 'Ipoh', '2024-01-22', 180.50, 'PENDING'),
-(207, 107, 'zainuddin.zakaria@gmail.com', 'Ipoh', '2024-01-20', 5, 1234567897, 'Melaka', '2024-01-25', 250.00, 'CONFIRMED'),
-(208, 108, 'salmah.hashim@gmail.com', 'Melaka', '2024-01-21', 2, 1234567898, 'Johor Bahru', '2024-01-24', 120.75, 'PENDING'),
-(209, 109, 'razak.abdullah@gmail.com', 'Johor Bahru', '2024-01-22', 4, 1234567899, 'Kuala Terengganu', '2024-01-27', 200.00, 'CONFIRMED'),
-(210, 110, 'nur.aisyah@gmail.com', 'Kuala Terengganu', '2024-01-23', 6, 1234567800, 'George Town', '2024-01-26', 300.25, 'PENDING');
 
 -- Insert 10 rows into 'cars' table
 INSERT INTO `cars` (`CAR_ID`, `CAR_NAME`, `CAR_FUEL`, `CAPACITY`, `RATE_PER_DAY`, `CAR_IMG`, `AVAILABILITY`)
@@ -42,6 +29,7 @@ VALUES
 (109, 'Honda City', 'Petrol', 4, 45.00, 'city.jpg', 'AVAILABLE'),
 (110, 'Lexus RX Hybrid', 'Hybrid', 5, 60.00, 'lexus.jpg', 'AVAILABLE');
 
+
 -- Insert 10 rows into 'customer' table
 INSERT INTO `customer` (`FNAME`, `LNAME`, `EMAIL`, `LICENSE_NO`, `PHONE_NO`, `PASSWORD`, `GENDER`)
 VALUES
@@ -55,6 +43,22 @@ VALUES
 ('Salmah', 'Hashim', 'salmah.hashim@gmail.com', 'OP123456', 0198267351, 'password8', 'Female'),
 ('Razak', 'Abdullah', 'razak.abdullah@gmail.com', 'QR345678', 0112265628, 'password9', 'Male'),
 ('Nur', 'Aisyah', 'nur.aisyah@gmail.com', 'ST567890', 0102659828, 'password10', 'Female');
+
+
+-- Insert 10 rows into 'booking' table
+INSERT INTO `booking` (`BOOK_ID`, `CAR_ID`, `EMAIL`, `BOOK_LOCATION`, `BOOK_DATE`, `DURATION`, `PHONE_NO`, `DESTINATION`, `RETURN_DATE`, `AMOUNT`, `STATUS`)
+VALUES
+(201, 101, 'ahmad.rahman@gmail.com', 'Kuala Lumpur', '2024-01-14', 5, 1234567891, 'Penang', '2024-01-19', 250.50, 'CONFIRMED'),
+(202, 102, 'siti.aminah@gmail.com', 'Penang', '2024-01-15', 3, 1234567892, 'Alor Setar', '2024-01-18', 150.25, 'PENDING'),
+(203, 103, 'mohammad.hassan@gmail.com', 'Langkawi', '2024-01-16', 4, 1234567893, 'Langkawi', '2024-01-20', 200.75, 'CONFIRMED'),
+(204, 104, 'nor.azizah@gmail.com', 'Cameron Highlands', '2024-01-17', 2, 1234567894, 'Gombak', '2024-01-19', 120.00, 'PENDING'),
+(205, 105, 'ali.ismail@gmail.com', 'Gombak', '2024-01-18', 6, 1234567895, 'Batu Pahat', '2024-01-23', 300.00, 'CONFIRMED'),
+(206, 106, 'fatimahlinda@gmail.com', 'Shah Alam', '2024-01-19', 3, 1234567896, 'Ipoh', '2024-01-22', 180.50, 'PENDING'),
+(207, 107, 'zainuddin.zakaria@gmail.com', 'Ipoh', '2024-01-20', 5, 1234567897, 'Melaka', '2024-01-25', 250.00, 'CONFIRMED'),
+(208, 108, 'salmah.hashim@gmail.com', 'Melaka', '2024-01-21', 2, 1234567898, 'Johor Bahru', '2024-01-24', 120.75, 'PENDING'),
+(209, 109, 'razak.abdullah@gmail.com', 'Johor Bahru', '2024-01-22', 4, 1234567899, 'Kuala Terengganu', '2024-01-27', 200.00, 'CONFIRMED'),
+(210, 110, 'nur.aisyah@gmail.com', 'Kuala Terengganu', '2024-01-23', 6, 1234567800, 'George Town', '2024-01-26', 300.25, 'PENDING');
+
 
 -- Insert 10 rows into 'payment' table
 INSERT INTO `payment` (`PAY_ID`, `BOOK_ID`, `CARD_NO`, `EXP_DATE`, `CVV`, `AMOUNT`)
