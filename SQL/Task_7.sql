@@ -34,8 +34,7 @@ BEGIN
 END//
 
 -- execute procedure
-EXECUTE add_new_car_customer('BMW', 'Petrol', 5, 200, 'bmw.jpg', '
-
+EXECUTE add_new_car_customer('BMW', 'Petrol', 5, 200, 'bmw.jpg', 'Available', 'Lala', 'Rara', 'lalarara@gmail.com', 'L4L4 R4R4', 123456789, 'lal4rar4', 'Girl');
 
 --procedure 2: retrieve details for a specific car
 CREATE PROCEDURE retrieve_car_details (
