@@ -177,7 +177,7 @@ $num=mysqli_num_rows($queryy);
                 <ul>
                     <li><a href="adminvehicle.php">VEHICLE MANAGEMENT</a></li>
                     <li><a href="adminusers.php">USERS</a></li>
-                    <li><a href="admindash.php">FEEDBACKS</a></li>
+                    <!-- <li><a href="admindash.php">FEEDBACKS</a></li> -->
                     
                     <li><a href="adminbook.php">BOOKING REQUEST</a></li>
                   <li> <button class="nn"><a href="index.php">LOGOUT</a></button></li>
@@ -218,13 +218,13 @@ $num=mysqli_num_rows($queryy);
                     
                     <td><?php echo $res['CAR_ID'];?></php></td>
                     <td><?php echo $res['EMAIL'];?></php></td>
-                    <td><?php echo $res['BOOK_PLACE'];?></php></td>
+                    <td><?php echo $res['BOOK_LOCATION'];?></php></td>
                     <td><?php echo $res['BOOK_DATE'];?></php></td>
                     <td><?php echo $res['DURATION'];?></php></td>
-                    <td><?php echo $res['PHONE_NUMBER'];?></php></td>
+                    <td><?php echo $res['PHONE_NO'];?></php></td>
                     <td><?php echo $res['DESTINATION'];?></php></td>
                     <td><?php echo $res['RETURN_DATE'];?></php></td>
-                    <td><?php echo $res['BOOK_STATUS'];?></php></td>
+                    <td><?php echo $res['STATUS'];?></php></td>
                     <td><button type="submit"  class="but"  name="approve"><a href="approve.php?id=<?php echo $res['BOOK_ID']?>">APPROVE</a></button></td>
                     <td><button type="submit" class="but" name="approve"><a href="adminreturn.php?id=<?php echo $res['CAR_ID']?>&bookid=<?php echo $res['BOOK_ID']?>">RETURNED</a></button></td>
                 </tr>
