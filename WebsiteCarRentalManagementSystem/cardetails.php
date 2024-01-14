@@ -222,10 +222,10 @@ ul li a:hover{
     $value = $_SESSION['email'];
     $_SESSION['email'] = $value;
     
-    $sql="select * from users where EMAIL='$value'";
+    $sql="select * from customer where EMAIL='$value'";
     $name = mysqli_query($con,$sql);
     $rows=mysqli_fetch_assoc($name);
-    $sql2="select *from cars where AVAILABLE='Y'";
+    $sql2="select *from cars where AVAILABILITY='Y'";
     $cars= mysqli_query($con,$sql2);
     
     // $row=mysqli_fetch_assoc($cars);
@@ -252,7 +252,6 @@ ul li a:hover{
                     <li><a href="aboutus2.html">ABOUT</a></li>
                     
                     <li><a href="contactus2.html">CONTACT</a></li>
-                    <li><a href="feedback/Feedbacks.php">FEEDBACK</a></li>
                     <li><button class="nn"><a href="index.php">LOGOUT</a></button></li>
                     <li><img src="images/profile.png" class="circle" alt="Alps"></li>
                     <li><p class="phello">HELLO! &nbsp;<a id="pname"><?php echo $rows['FNAME']." ".$rows['LNAME']?></a></p></li>
@@ -269,7 +268,7 @@ ul li a:hover{
         while($result= mysqli_fetch_array($cars))
         {
             // echo $result['CAR_ID'];
-            // echo $result['AVAILABLE'];
+            // echo $result['AVAILABILITY'];
             
     ?>    
     
@@ -282,9 +281,9 @@ ul li a:hover{
         <div class="content">
             <?php $res=$result['CAR_ID'];?>
             <h1><?php echo $result['CAR_NAME']?></h1>
-            <h2>Fuel Type : <a><?php echo $result['FUEL_TYPE']?></a> </h2>
+            <h2>Fuel Type : <a><?php echo $result['CAR_FUEL']?></a> </h2>
             <h2>CAPACITY : <a><?php echo $result['CAPACITY']?></a> </h2>
-            <h2>Rent Per Day : <a>₹<?php echo $result['PRICE']?>/-</a></h2>
+            <h2>Rent Per Day : <a>₹<?php echo $result['RATE_PER_DAY']?>/-</a></h2>
             <button type="submit"  name="booknow" class="utton" style="margin-top: 5px;"><a href="booking.php?id=<?php echo $res;?>">book</a></button>
         </div>
     </div></form></li>
@@ -298,7 +297,7 @@ ul li a:hover{
 
     $value = $_SESSION['email'];
     
-    $sql="select * from users where EMAIL='$value'";
+    $sql="select * from customer where EMAIL='$value'";
     $name = mysqli_query($con,$sql);
     $rows=mysqli_fetch_assoc($name);
     // // $sql2="select *from cars where CAR_ID=1";

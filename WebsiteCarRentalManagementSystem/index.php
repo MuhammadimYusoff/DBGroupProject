@@ -39,7 +39,7 @@ require_once('connection.php');
         }
 
         else{
-            $query="select *from users where EMAIL='$email'";
+            $query="select *from customer where EMAIL='$email'";
             $res=mysqli_query($con,$query);
             if($row=mysqli_fetch_assoc($res)){
                 $db_password = $row['PASSWORD'];
