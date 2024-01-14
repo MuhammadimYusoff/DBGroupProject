@@ -31,18 +31,19 @@ VALUES
 
 
 -- Insert 10 rows into 'customer' table
-INSERT INTO `customer` (`FNAME`, `LNAME`, `EMAIL`, `LICENSE_NO`, `PHONE_NO`, `PASSWORD`, `GENDER`)
+INSERT INTO `customer` (`FNAME`, `LNAME`, `EMAIL`, `LICENSE_NO`, `PHONE_NO`, `PASSWORD`, `GENDER`) 
 VALUES
-('Ahmad', 'Rahman', 'ahmad.rahman@gmail.com', 'AB123456', 0113674891, 'password1', 'Male'),
-('Siti', 'Aminah', 'siti.aminah@gmail.com', 'CD789012', 0138746298, 'password2', 'Female'),
-('Mohammad', 'Hassan', 'mohammad.hassan@gmail.com', 'EF345678', 0145873625, 'password3', 'Male'),
-('Nor', 'Azizah', 'nor.azizah@gmail.com', 'GH567890', 0175878725, 'password4', 'Female'),
-('Ali', 'Ismail', 'ali.ismail@gmail.com', 'IJ123456', 0195878756, 'password5', 'Male'),
-('Fatimah', 'Linda', 'fatimahlinda@gmail.com', 'KL345678', 0115874456, 'password6', 'Female'),
-('Zainuddin', 'Zakaria', 'zainuddin.zakaria@gmail.com', 'MN567890', 0115876767, 'password7', 'Male'),
-('Salmah', 'Hashim', 'salmah.hashim@gmail.com', 'OP123456', 0198267351, 'password8', 'Female'),
-('Razak', 'Abdullah', 'razak.abdullah@gmail.com', 'QR345678', 0112265628, 'password9', 'Male'),
-('Nur', 'Aisyah', 'nur.aisyah@gmail.com', 'ST567890', 0102659828, 'password10', 'Female');
+('Ahmad', 'Rahman', 'ahmad.rahman@gmail.com', 'AB123456', 113674891, '2ac9cb7dc02b3c0083eb70898e549b63', 'male'),
+('Ali', 'Ismail', 'ali.ismail@gmail.com', 'IJ123456', 195878756, '7df5222fb59b99c7c598bee2ef00b85e', 'male'),
+('Fatimah', 'Linda', 'fatimahlinda@gmail.com', 'KL345678', 115874456, 'fabb2e3f5cee3fa92c8a872832d21fec', 'female'),
+('irdina', 'masni', 'irdinamasni@gmail.com', '01111901', 111112133, '9b6b249ca27284311db1df1aae014ea8', 'female'),
+('Mohammad', 'Hassan', 'mohammad.hassan@gmail.com', 'EF345678', 145873625, '874fcc6e14275dde5a23319c9ce5f8e4', 'male'),
+('Nor', 'Azizah', 'nor.azizah@gmail.com', 'GH567890', 175878725, 'b025a0d0ec287ba8ad0d90f4ff69158f', 'female'),
+('Nur', 'Aisyah', 'nur.aisyah@gmail.com', 'ST567890', 102659828, '26a27c4eda5615486b20fb3103f1d2a6', 'female'),
+('Razak', 'Abdullah', 'razak.abdullah@gmail.com', 'QR345678', 112265628, '55656034eb43d2f48de7f517c2880feb', 'male'),
+('Salmah', 'Hashim', 'salmah.hashim@gmail.com', 'OP123456', 198267351, '6b208366be3649e11606feb20008924f', 'female'),
+('Siti', 'Aminah', 'siti.aminah@gmail.com', 'CD789012', 138746298, '6f9dff5af05096ea9f23cc7bedd65683', 'female'),
+('Zainuddin', 'Zakaria', 'zainuddin.zakaria@gmail.com', 'MN567890', 115876767, '55354afecb098a4371f8cfa95f469868', 'male');
 
 
 -- Insert 10 rows into 'booking' table
