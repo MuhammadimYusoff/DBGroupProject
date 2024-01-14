@@ -19,7 +19,7 @@
 
 
 </head>
-<body  background=images/book.jpg>
+<body  background=images/car-bg.jpg>
 <style>
 *{
     margin: 0;
@@ -158,7 +158,6 @@ input#datefield{
     width: 400px;
     float: left;
     height: 70px;
-
 }
 
 ul{
@@ -180,7 +179,7 @@ ul li{
 
 ul li a{
     text-decoration: none;
-    color:white;
+    color:black;
     font-family: Arial;
     font-weight: bold;
     transition: 0.4s ease-in-out;
@@ -201,7 +200,7 @@ ul li a:hover{
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
-    color:white;
+    color:black;
     transition: 0.4s ease;
     
 
@@ -291,14 +290,14 @@ ul li a:hover{
        <div class="hai">
             <div class="navbar">
                 <div class="icon">
-                    <h2 class="logo">CaRs</h2>
+                    <h2 class="logo">IIUM CAR RENT</h2>
                 </div>
                 <div class="menu" >
                     <ul>
                         <li ><a href="cardetails.php">HOME</a></li>
-                        <li><a href="aboutus2.html">ABOUT</a></li>
-                        <li><a href="#">DESIGN</a></li>
-                        <li><a href="contactus2.html">CONTACT</a></li>
+                        <!-- <li><a href="aboutus2.html">ABOUT</a></li> -->
+                        <!--<li><a href="#">DESIGN</a></li>-->
+                        <!-- <li><a href="contactus2.html">CONTACT</a></li> -->
                         <li><button class="nn"><a href="index.html">LOGOUT</a></button></li>
                         <li><img src="images/profile.png" class="circle" alt="Alps"></li>
                     <li><p class="phello">HELLO! &nbsp;<a id="pname"><?php echo $rows['FNAME']." ".$rows['LNAME']?></a></p></li>

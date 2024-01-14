@@ -70,8 +70,7 @@ require_once('connection.php');
     <div class="hai">
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo">IIUM RENT</h2>
-                <h2 class="logo">CAR</h2>
+                <h2 class="logo">IIUM CAR RENT</h2>
             </div>
             <div class="menu">
                 <ul>
@@ -87,10 +86,10 @@ require_once('connection.php');
           
         </div>
         <div class="content">
-            <h1>Rent Your <br><span>Dream Car</span></h1>
-            <p class="par">Live the life of Luxury.<br>
-                Just rent a car of your wish from our vast collection.<br>Enjoy every moment with your family<br>
-                 Join us to make this family vast.  </p>
+            <h1>Welcome to <br><span> IIUM Car Rentals</span></h1>
+            <p class="par">Discover Convenience, Explore Freedom.<br>
+             Your hassle-free solution for on-campus and beyond-campus travel.<br>Enjoy the freedom to move around with ease.<br>
+             Book your ride now and elevate your commuting experience.  </p>
             <button class="cn"><a href="register.php">JOIN US</a></button>
             <div class="form">
                 <h2>Login Here</h2>

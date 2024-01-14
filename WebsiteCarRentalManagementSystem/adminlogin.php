@@ -21,7 +21,7 @@
 
 body{
     width: 90%;
-    background-image: url("images/adminbg2.jpg");
+    background-image: url("images/car-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -124,13 +124,14 @@ body{
     margin-top: 60px;
     text-align: center;
 }
+
 .helloadmin h1{
     margin-top: 650px;
     margin-left: 425px;
     display: inline;
     font-family: 'Times New Roman';
     font-size: 50px;
-    color: white;
+    color: black;
 }
 
 .back{
