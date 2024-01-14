@@ -11,17 +11,17 @@ $carres=mysqli_query($con,$sql2);
 $carresult = mysqli_fetch_assoc($carres);
 $email=$res['EMAIL'];
 $carname=$carresult['CAR_NAME'];
-if($carresult['AVAILABLE']=='Y')
+if($carresult['AVAILABILITY']=='AVAILABLE')
 {
-if($res['BOOK_STATUS']=='APPROVED' || $res['BOOK_STATUS']=='RETURNED')
+if($res['STATUS']=='APPROVED' || $res['STATUS']=='RETURNED')
 {
     echo '<script>alert("ALREADY APPROVED")</script>';
     echo '<script> window.location.href = "adminbook.php";</script>';
 }
 else{
-    $query="UPDATE booking set  BOOK_STATUS='APPROVED' where BOOK_ID=$bookid";
+    $query="UPDATE booking set  STATUS='APPROVED' where BOOK_ID=$bookid";
     $queryy=mysqli_query($con,$query);
-    $sql2="UPDATE cars set AVAILABLE='N' where CAR_ID=$res[CAR_ID]";
+    $sql2="UPDATE cars set AVAILABILITY='NOT AVAILABLE' where CAR_ID=$res[CAR_ID]";
     $query2=mysqli_query($con,$sql2);
     
     echo '<script>alert("APPROVED SUCCESSFULLY")</script>';
