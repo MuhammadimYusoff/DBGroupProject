@@ -8,6 +8,8 @@ CREATE TABLE `admin` (
 
 INSERT INTO `admin` (`ADMIN_ID`, `ADMIN_PASSWORD`) 
 VALUES('ADMIN', 'ADMIN');
+INSERT INTO `admin` (`ADMIN_ID`, `ADMIN_PASSWORD`) 
+VALUES('ROOT', 'ROOT');
 
 -- --------------------------------------------------------
 
@@ -30,9 +32,9 @@ CREATE TABLE `booking` (
 -- Data for table `booking`--
 
 INSERT INTO `booking` (`BOOK_ID`, `CAR_ID`, `EMAIL`, `BOOK_PLACE`, `BOOK_DATE`, `DURATION`, `PHONE_NUMBER`, `DESTINATION`, `RETURN_DATE`, `PRICE`, `BOOK_STATUS`) VALUES
-(66, 2, 'swasthik@gmail.com', 'bangalore', '2022-03-22', 5, 6363549133, 'moodabidri', '2022-04-09', 35000, 'UNDER PROCESSING'),
-(68, 1, 'varshithvh@gmail.com', 'mysore', '2022-03-22', 10, 6363549133, 'moodabidri', '2022-04-02', 50000, 'RETURNED'),
-(69, 1, 'varshithvhegde@gmail.com', 'bangalore', '2022-03-24', 10, 6363549133, 'moodabidri', '2022-03-31', 50000, 'RETURNED');
+(66, 2, 'tester@gmail.com', 'melati', '2022-03-22', 5, 6363549133, 'ampang', '2022-04-09', 35000, 'UNDER PROCESSING'),
+(68, 1, 'testing@gmail.com', 'ampang', '2022-03-22', 10, 6363549133, 'manjung', '2022-04-02', 50000, 'RETURNED'),
+(69, 1, 'lalarara@gmail.com', 'selangor', '2022-03-24', 10, 6363549133, 'danau kita', '2022-03-31', 50000, 'RETURNED');
 
 -- --------------------------------------------------------
 
@@ -62,28 +64,7 @@ INSERT INTO `cars` (`CAR_ID`, `CAR_NAME`, `FUEL_TYPE`, `CAPACITY`, `PRICE`, `CAR
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `feedback`
---
-
-CREATE TABLE `feedback` (
-  `FED_ID` int(11) NOT NULL,
-  `EMAIL` varchar(255) NOT NULL,
-  `COMMENT` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Data for table `feedback`
---
-
-INSERT INTO `feedback` (`FED_ID`, `EMAIL`, `COMMENT`) VALUES
-(10, 'varshithvh@gmail.com', 'hai I am satisfied with your service .But need to know whether is there any other options\r\n');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `payment`
---
+-- Table structure for table `payment` --
 
 CREATE TABLE `payment` (
   `PAY_ID` int(11) NOT NULL,
@@ -94,18 +75,15 @@ CREATE TABLE `payment` (
   `PRICE` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Data for table `payment`
---
+
+-- Data for table `payment` --
 
 INSERT INTO `payment` (`PAY_ID`, `BOOK_ID`, `CARD_NO`, `EXP_DATE`, `CVV`, `PRICE`) VALUES
 (24, 68, '4444444444444444', '11/22', 333, 50000);
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `users`
---
+-- Table structure for table `users` --
 
 CREATE TABLE `users` (
   `FNAME` varchar(255) NOT NULL,
@@ -117,14 +95,12 @@ CREATE TABLE `users` (
   `GENDER` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Data for table `users`
---
+-- Data for table `users` --
 
 INSERT INTO `users` (`FNAME`, `LNAME`, `EMAIL`, `LIC_NUM`, `PHONE_NUMBER`, `PASSWORD`, `GENDER`) VALUES
-('Swasthik', 'Jain', 'swasthik@gmail.com', 'B2343', 9845687555, 'c788b480e4a3c807a14b6f3f4b1a1ae6', 'male'),
-('Varshith', 'Hegde', 'varshithvh@gmail.com', 'B3uudh4', 6363549133, 'e6235c884414e320c8781c22b0c38c9b', 'male'),
-('Varshith', 'hegde', 'varshithvhegde@gmail.com', 'ghhdhd', 6363549133, 'e6235c884414e320c8781c22b0c38c9b', 'male');
+('test', 'er', 'tester@gmail.com', 'B2343', 9845687555, 'c788b480e4a3c807a14b6f3f4b1a1ae6', 'male'),
+('test', 'ing', 'testing@gmail.com', 'B3uudh4', 6363549133, 'e6235c884414e320c8781c22b0c38c9b', 'male'),
+('lala', 'rara', 'lalarara@gmail.com', 'ghhdhd', 6363549133, 'e6235c884414e320c8781c22b0c38c9b', 'male');
 
 --
 -- Indexes for dumped tables
@@ -187,12 +163,6 @@ ALTER TABLE `cars`
   MODIFY `CAR_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
--- AUTO_INCREMENT for table `feedback`
---
-ALTER TABLE `feedback`
-  MODIFY `FED_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
---
 -- AUTO_INCREMENT for table `payment`
 --
 ALTER TABLE `payment`
@@ -208,12 +178,6 @@ ALTER TABLE `payment`
 ALTER TABLE `booking`
   ADD CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`CAR_ID`) REFERENCES `cars` (`CAR_ID`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `booking_ibfk_2` FOREIGN KEY (`EMAIL`) REFERENCES `users` (`EMAIL`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `feedback`
---
-ALTER TABLE `feedback`
-  ADD CONSTRAINT `TEST` FOREIGN KEY (`EMAIL`) REFERENCES `users` (`EMAIL`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `payment`
