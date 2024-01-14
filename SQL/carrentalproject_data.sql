@@ -15,11 +15,11 @@ VALUES
 -- Insert 10 rows into 'booking' table
 INSERT INTO `booking` (`BOOK_ID`, `CAR_ID`, `EMAIL`, `BOOK_LOCATION`, `BOOK_DATE`, `DURATION`, `PHONE_NO`, `DESTINATION`, `RETURN_DATE`, `AMOUNT`, `STATUS`)
 VALUES
-(201, 101, 'john.doe@gmail.com', 'Kuala Lumpur', '2024-01-14', 5, 1234567891, 'Penang', '2024-01-19', 250.50, 'CONFIRMED'),
-(202, 102, 'janesmith@gmail.com', 'Penang', '2024-01-15', 3, 1234567892, 'Alor Setar', '2024-01-18', 150.25, 'PENDING'),
-(203, 103, 'mohammad.rahman@gmail.com', 'Langkawi', '2024-01-16', 4, 1234567893, 'Langkawi', '2024-01-20', 200.75, 'CONFIRMED'),
-(204, 104, 'siti.amina@gmail.com', 'Cameron Highlands', '2024-01-17', 2, 1234567894, 'Gombak', '2024-01-19', 120.00, 'PENDING'),
-(205, 105, 'aliismail@gmail.com', 'Gombak', '2024-01-18', 6, 1234567895, 'Batu Pahat', '2024-01-23', 300.00, 'CONFIRMED'),
+(201, 101, 'ahmad.rahman@gmail.com', 'Kuala Lumpur', '2024-01-14', 5, 1234567891, 'Penang', '2024-01-19', 250.50, 'CONFIRMED'),
+(202, 102, 'siti.aminah@gmail.com', 'Penang', '2024-01-15', 3, 1234567892, 'Alor Setar', '2024-01-18', 150.25, 'PENDING'),
+(203, 103, 'mohammad.hassan@gmail.com', 'Langkawi', '2024-01-16', 4, 1234567893, 'Langkawi', '2024-01-20', 200.75, 'CONFIRMED'),
+(204, 104, 'nor.azizah@gmail.com', 'Cameron Highlands', '2024-01-17', 2, 1234567894, 'Gombak', '2024-01-19', 120.00, 'PENDING'),
+(205, 105, 'ali.ismail@gmail.com', 'Gombak', '2024-01-18', 6, 1234567895, 'Batu Pahat', '2024-01-23', 300.00, 'CONFIRMED'),
 (206, 106, 'fatimahlinda@gmail.com', 'Shah Alam', '2024-01-19', 3, 1234567896, 'Ipoh', '2024-01-22', 180.50, 'PENDING'),
 (207, 107, 'zainuddin.zakaria@gmail.com', 'Ipoh', '2024-01-20', 5, 1234567897, 'Melaka', '2024-01-25', 250.00, 'CONFIRMED'),
 (208, 108, 'salmah.hashim@gmail.com', 'Melaka', '2024-01-21', 2, 1234567898, 'Johor Bahru', '2024-01-24', 120.75, 'PENDING'),
@@ -49,7 +49,7 @@ VALUES
 ('Mohammad', 'Hassan', 'mohammad.hassan@gmail.com', 'EF345678', 9876543213, 'password3', 'Male'),
 ('Nor', 'Azizah', 'nor.azizah@gmail.com', 'GH567890', 9876543214, 'password4', 'Female'),
 ('Ali', 'Ismail', 'ali.ismail@gmail.com', 'IJ123456', 9876543215, 'password5', 'Male'),
-('Fatimah', 'Yusof', 'fatimah.yusof@gmail.com', 'KL345678', 9876543216, 'password6', 'Female'),
+('Fatimah', 'Linda', 'fatimahlinda@gmail.com', 'KL345678', 9876543216, 'password6', 'Female'),
 ('Zainuddin', 'Zakaria', 'zainuddin.zakaria@gmail.com', 'MN567890', 9876543217, 'password7', 'Male'),
 ('Salmah', 'Hashim', 'salmah.hashim@gmail.com', 'OP123456', 9876543218, 'password8', 'Female'),
 ('Razak', 'Abdullah', 'razak.abdullah@gmail.com', 'QR345678', 9876543219, 'password9', 'Male'),
