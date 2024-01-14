@@ -165,7 +165,7 @@ input#name{
             <label>Price : </label>
             <br>
             <input type="number" name="price" min="1"
-            id="name" placeholder="Enter Price Of Car for One Day(in rupees)" required>
+            id="name" placeholder="Enter Price Of Car for One Day(in MYR)" required>
             <br><br>
 
             <label>Car Image : </label>
