@@ -16,7 +16,7 @@
 }
 .hai{
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0)50%, rgba(0,0,0,0)50%),url("../images/carbg2.jpg");
+    background: linear-gradient(to top, rgba(0,0,0,0)50%, rgba(0,0,0,0)50%),url("images/carbg2.jpg");
     background-position: center;
     background-size: cover;
     height: 109vh;
@@ -90,7 +90,7 @@ ul li a{
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow:0 0  20px rgba(0,0,0,0.15);
-    margin-left : 100px ;
+    /* margin-left : 100px ; */
     margin-top: 25px;
     width: 1300px;
     height: 300px;
@@ -126,7 +126,7 @@ ul li a{
 
 
 .header{
-    margin-top: -700px;
+    margin-top: -600px;
     margin-left: 650px;
 }
 
