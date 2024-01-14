@@ -28,7 +28,7 @@ if(isset($_POST['regs']))
     }
     else{
         if($pass==$cpass){
-        $sql2="SELECT *from users where EMAIL='$email'";
+        $sql2="SELECT *from customer where EMAIL='$email'";
         $res=mysqli_query($con,$sql2);
         if(mysqli_num_rows($res)>0){
             echo '<script>alert("EMAIL ALREADY EXISTS PRESS OK FOR LOGIN!!")</script>';
@@ -36,7 +36,7 @@ if(isset($_POST['regs']))
 
         }
         else{
-        $sql="insert into users (FNAME,LNAME,EMAIL,LIC_NUM,PHONE_NUMBER,PASSWORD,GENDER) values('$fname','$lname','$email','$lic',$ph,'$Pass','$gender')";
+        $sql="insert into customer (FNAME,LNAME,EMAIL,LICENSE_NO,PHONE_NO,PASSWORD,GENDER) values('$fname','$lname','$email','$lic',$ph,'$Pass','$gender')";
         $result = mysqli_query($con,$sql);
           
 

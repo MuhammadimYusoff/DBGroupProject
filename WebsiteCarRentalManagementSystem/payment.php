@@ -206,12 +206,12 @@ if(isset($_POST['pay'])){
   $cardno=mysqli_real_escape_string($con,$_POST['cardno']);
   $exp=mysqli_real_escape_string($con,$_POST['exp']);
   $cvv=mysqli_real_escape_string($con,$_POST['cvv']);
-  $price=$email['PRICE'];
+  $price=$email['AMOUNT'];
   if(empty($cardno) || empty($exp) ||  empty($cvv) ){
     echo '<script>alert("please fill the place")</script>';
   }
   else{
-    $sql2="insert into payment (BOOK_ID,CARD_NO,EXP_DATE,CVV,PRICE) values($bid,'$cardno','$exp',$cvv,$price)";
+    $sql2="insert into payment (BOOK_ID,CARD_NO,EXP_DATE,CVV,AMOUNT) values($bid,'$cardno','$exp',$cvv,$price)";
     $result = mysqli_query($con,$sql2);
     if($result){
       header("Location: psucess.php");
@@ -228,7 +228,7 @@ if(isset($_POST['pay'])){
 
 
 
-  <h2 class="payment">TOTAL PAYMENT : <a>₹<?php echo $email['PRICE']?>/-</a></h2>
+  <h2 class="payment">TOTAL PAYMENT : <a>RM<?php echo $email['AMOUNT']?>/-</a></h2>
 
     <div class="card">
       <form method="POST">

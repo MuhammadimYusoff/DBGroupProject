@@ -243,11 +243,11 @@ ul li a:hover{
     $email = mysqli_fetch_assoc($cname);
     
     $value = $_SESSION['email'];
-    $sql="select * from users where EMAIL='$value'";
+    $sql="select * from customer where EMAIL='$value'";
     $name = mysqli_query($con,$sql);
     $rows=mysqli_fetch_assoc($name);
     $uemail=$rows['EMAIL'];
-    $carprice=$email['PRICE'];
+    $carprice=$email['EMAIL'];
     if(isset($_POST['book'])){
        
         $bplace=mysqli_real_escape_string($con,$_POST['place']);
@@ -264,7 +264,7 @@ ul li a:hover{
         else{
             if($bdate<$rdate){
             $price=($dur*$carprice);
-            $sql="insert into booking (CAR_ID,EMAIL,BOOK_PLACE,BOOK_DATE,DURATION,PHONE_NUMBER,DESTINATION,PRICE,RETURN_DATE) values($carid,'$uemail','$bplace','$bdate',$dur,$phno,'$des',$price,'$rdate')";
+            $sql="insert into booking (CAR_ID,EMAIL,BOOK_LOCATION,BOOK_DATE,DURATION,PHONE_NO,DESTINATION,AMOUNT,RETURN_DATE) values($carid,'$uemail','$bplace','$bdate',$dur,$phno,'$des',$price,'$rdate')";
             $result = mysqli_query($con,$sql);
             
             if($result){
@@ -346,7 +346,7 @@ ul li a:hover{
             id="name" placeholder="Enter Your Destination">
             <br><br>
 
-            <label>Return date : </label>
+            <label>RETURN DATA : </label>
             <br>
             <input type ="date" name="rdate"
             id="dfield"  min='1899-01-01' placeholder="Enter The Return Date">
