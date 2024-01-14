@@ -45,9 +45,11 @@ WHERE BOOK_ID = 'BOOK_ID';
 
 
 /*remove*/
+-- •⁠  Remove customer
 DELETE FROM customer
 WHERE CustomerID = 'CustomerID';
 
+-- •⁠  Remove a booking and associated payment:
 DELETE FROM booking
 WHERE BOOK_ID = 'BOOK_ID';
 
