@@ -345,7 +345,7 @@ ul li a:hover{
             id="name" placeholder="Enter Your Destination">
             <br><br>
 
-            <label>RETURN DATA : </label>
+            <label>RETURN DATE : </label>
             <br>
             <input type ="date" name="rdate"
             id="dfield"  min='1899-01-01' placeholder="Enter The Return Date">
