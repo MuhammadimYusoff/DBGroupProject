@@ -225,7 +225,7 @@ ul li a:hover{
     $sql="select * from customer where EMAIL='$value'";
     $name = mysqli_query($con,$sql);
     $rows=mysqli_fetch_assoc($name);
-    $sql2="select *from cars where AVAILABILITY='Y'";
+    $sql2="select *from cars where AVAILABILITY='AVAILABLE' ";
     $cars= mysqli_query($con,$sql2);
     
     // $row=mysqli_fetch_assoc($cars);
