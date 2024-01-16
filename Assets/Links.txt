@@ -1,8 +1,5 @@
 REPORT LINK:-
 https://docs.google.com/document/d/1Hu5zsyEbZynQVXUa8jTcS5IjeI0BOwPMqMk8Ul0wIRw/edit
 
-UML DIAGRAM:-
-https://lucid.app/publicSegments/view/18048505-09a8-481f-9249-34a90f3205cc
-
 GitHub Link:-
 https://github.com/MuhammadimYusoff/DBGroupProject
