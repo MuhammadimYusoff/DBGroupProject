@@ -144,6 +144,18 @@ ul li a{
 
 }
 
+.buttonDelete {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 .nn a{
     text-decoration: none;
@@ -213,7 +225,7 @@ $num=mysqli_num_rows($queryy);
                     <td><?php echo $res['LICENSE_NO'];?></php></td>
                     <td><?php echo $res['PHONE_NO'];?></php></td>
                     <td><?php echo $res['GENDER'];?></php></td>
-                    <td><button type="submit" class="but" name="approve"><a href="deleteuser.php?id=<?php echo $res['EMAIL']?>">DELETE USER</a></button></td>
+                    <td><button type="submit" class="buttonDelete" name="approve"><a href="deleteuser.php?id=<?php echo $res['EMAIL']?>">DELETE USER</a></button></td>
                 </tr>
                <?php } ?>
                 </tbody>

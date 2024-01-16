@@ -17,7 +17,7 @@
 //     }
   
        
-//         $sql="insert into users (FNAME,LNAME,EMAIL,LIC_NUM,PHONE_NUMBER,USER_ID,PASSWORD) values('$fname','$lname','$email','$lic',$ph,'$id','$pass')";
+//         $sql="insert into customer (FNAME,LNAME,EMAIL,LIC_NUM,PHONE_NUMBER,USER_ID,PASSWORD) values('$fname','$lname','$email','$lic',$ph,'$id','$pass')";
 //         $result = mysqli_query($con,$sql);
 
 //         if($result){
